@@ -1,0 +1,1 @@
+export const queryPermissionsByUser = params => getAction('/sys/permission/getUserPermissionByToken', params)
