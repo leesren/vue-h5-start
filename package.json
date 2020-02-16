@@ -13,7 +13,6 @@
     "axios": "^0.19.2",
     "core-js": "^2.6.5",
     "css-comm-utils": "^1.0.6",
-    "cube-ui": "~1.12.15",
     "dayjs": "^1.8.20",
     "js-cookie": "^2.2.1",
     "lodash": "^4.17.15",
@@ -26,6 +25,8 @@
     "vuex": "^3.0.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "@vue/cli-plugin-babel": "^3.12.0",
     "@vue/cli-plugin-eslint": "^3.12.0",
     "@vue/cli-service": "^3.12.0",
@@ -35,21 +36,32 @@
     "eslint": "^5.16.0",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-vue": "^5.0.0",
+    "husky": "^4.2.3",
     "less": "^3.11.1",
     "less-loader": "^5.0.0",
+    "lint-staged": "^10.0.7",
     "node-sass": "^4.12.0",
     "postcss-pxtorem": "^4.0.1",
     "sass-loader": "^8.0.0",
     "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.2",
-    "vue-cli-plugin-cube-ui": "^0.2.5",
+    "stylus-loader": "^3.0.2", 
     "vue-cli-plugin-mock": "^0.0.10",
     "vue-template-compiler": "^2.6.10"
   },
-  "transformModules": {
-    "cube-ui": {
-      "transform": "cube-ui/src/modules/${member}",
-      "kebabCase": true
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,vue,less}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.{js,vue}": [
+      "npm run lint",
+      "git add"
+    ]
   }
 }

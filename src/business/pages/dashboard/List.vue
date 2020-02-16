@@ -1,6 +1,7 @@
 <template>
-  <div class="position-box"> 
+  <div class="position-box">
     <!-- <Button class="go-top">返回顶部</Button> -->
+    <div>sdafdadfasd</div>
   </div>
 </template>
 <script>
@@ -12,14 +13,9 @@ export default {
     // Button
   },
   data() {
-    return {
-      
-    }
+    return {}
   },
-  mounted() { 
-  },
-  methods: {
-    
-  }
+  mounted() {},
+  methods: {}
 }
 </script>
