@@ -24,8 +24,4 @@ yarn lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## 提交规范
-
-需要全局安装
-```sh
-npm install -g  @commitlint/cli @commitlint/config-conventional
-```
+需要安装 angular 提交规范进行提交，不然可能提交不成功
