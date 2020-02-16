@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "start": "npm run serve"
+    "start": "npm run serve",
+    "changelog": "node ./bin/changelog.js"
   },
   "dependencies": {
     "amfe-flexible": "^2.2.1",
@@ -33,9 +34,11 @@
     "@vue/eslint-config-prettier": "^6.0.0",
     "babel-eslint": "^10.0.1",
     "babel-plugin-import": "^1.13.0",
+    "conventional-changelog": "^3.1.18",
     "eslint": "^5.16.0",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-vue": "^5.0.0",
+    "fs-extra": "^8.1.0",
     "husky": "^4.2.3",
     "less": "^3.11.1",
     "less-loader": "^5.0.0",
@@ -44,7 +47,7 @@
     "postcss-pxtorem": "^4.0.1",
     "sass-loader": "^8.0.0",
     "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.2", 
+    "stylus-loader": "^3.0.2",
     "vue-cli-plugin-mock": "^0.0.10",
     "vue-template-compiler": "^2.6.10"
   },
