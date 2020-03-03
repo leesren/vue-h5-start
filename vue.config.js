@@ -1,6 +1,6 @@
 const autoprefixer = require('autoprefixer')
-const pxtorem = require('postcss-pxtorem') // rem 适配
-// const pxtoviewport = require('postcss-px-to-viewport');// viewport 适配
+// const pxtorem = require('postcss-pxtorem') // rem 适配
+const pxtoviewport = require('postcss-px-to-viewport') // viewport 适配
 // vue.config.js
 module.exports = {
   // 选项...
@@ -31,13 +31,13 @@ module.exports = {
       postcss: {
         plugins: [
           autoprefixer(),
-          // pxtoviewport({
-          //   viewportWidth: 375
-          // })
-          pxtorem({
-            rootValue: 37.5,
-            propList: ['*']
+          pxtoviewport({
+            viewportWidth: 375
           })
+          // pxtorem({
+          //   rootValue: 37.5,
+          //   propList: ['*']
+          // })
         ]
       }
     }

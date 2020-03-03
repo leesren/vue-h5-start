@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import 'amfe-flexible'
+// import 'amfe-flexible'
 import Storage from 'vue-ls'
 import App from './App.vue'
 import router from './routers'
@@ -10,6 +10,7 @@ import vueBus from './plugins/vueBus'
 import installVueVant from './plugins/installVueVant'
 import { ACCESS_TOKEN } from '@/store/mutation-types'
 import 'css-comm-utils'
+import './styles/index.scss'
 Vue.config.productionTip = false
 Vue.use(Storage, projectConfig.setting.storageOptions)
 Vue.use(VueAxios, router)
@@ -32,6 +33,18 @@ new Vue({
     // store.commit('TOGGLE_WEAK', Vue.ls.get(DEFAULT_COLOR_WEAK, setting.colorWeak))
     // store.commit('TOGGLE_COLOR', Vue.ls.get(DEFAULT_COLOR, setting.primaryColor))
     store.commit('SET_TOKEN', Vue.ls.get(ACCESS_TOKEN))
+    this.setScale()
+    window.addEventListener('resize', this.setScale)
+  },
+  methods: {
+    setScale() {
+      let _w = window.innerWidth
+      if (_w > 800) {
+        document.getElementById('app').style.transform = `scale(${375 / _w})`
+      } else {
+        document.getElementById('app').style.transform = ``
+      }
+    }
   },
   render: h => h(App)
 }).$mount('#app')
