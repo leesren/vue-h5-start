@@ -1262,10 +1262,6 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.npm.taobao.org/amdefine/download/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
 
-amfe-flexible@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.npm.taobao.org/amfe-flexible/download/amfe-flexible-2.2.1.tgz#353f00289e4d38ca88a21eb3854420308af0b559"
-
 ansi-colors@^3.0.0:
   version "3.2.4"
   resolved "https://registry.npm.taobao.org/ansi-colors/download/ansi-colors-3.2.4.tgz#e3a3da4bfbae6c86a9c285625de124a234026fbf"
@@ -2194,7 +2190,7 @@ commander@2.17.x:
   version "2.17.1"
   resolved "https://registry.npm.taobao.org/commander/download/commander-2.17.1.tgz?cache=0&sync_timestamp=1580716890635&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcommander%2Fdownload%2Fcommander-2.17.1.tgz#bd77ab7de6de94205ceacc72f1716d29f20a77bf"
 
-commander@^2.18.0, commander@^2.20.0, commander@~2.20.3:
+commander@^2.18.0, commander@^2.20.0:
   version "2.20.3"
   resolved "https://registry.npm.taobao.org/commander/download/commander-2.20.3.tgz?cache=0&sync_timestamp=1580716890635&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcommander%2Fdownload%2Fcommander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
 
@@ -4155,12 +4151,13 @@ handle-thing@^2.0.0:
   resolved "https://registry.npm.taobao.org/handle-thing/download/handle-thing-2.0.0.tgz#0e039695ff50c93fc288557d696f3c1dc6776754"
 
 handlebars@^4.4.0:
-  version "4.7.3"
-  resolved "https://registry.npm.taobao.org/handlebars/download/handlebars-4.7.3.tgz#8ece2797826886cf8082d1726ff21d2a022550ee"
+  version "4.7.7"
+  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.7.7.tgz#9ce33416aad02dbd6c8fafa8240d5d98004945a1"
   dependencies:
+    minimist "^1.2.5"
     neo-async "^2.6.0"
-    optimist "^0.6.1"
     source-map "^0.6.1"
+    wordwrap "^1.0.0"
   optionalDependencies:
     uglify-js "^3.1.4"
 
@@ -4180,10 +4177,6 @@ has-ansi@^2.0.0:
   resolved "https://registry.npm.taobao.org/has-ansi/download/has-ansi-2.0.0.tgz#34f5049ce1ecdf2b0649af3ef24e45ed35416d91"
   dependencies:
     ansi-regex "^2.0.0"
-
-has-flag@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npm.taobao.org/has-flag/download/has-flag-1.0.0.tgz#9d9e793165ce017a00f00418c43f942a7b1d11fa"
 
 has-flag@^3.0.0:
   version "3.0.0"
@@ -4916,7 +4909,7 @@ javascript-stringify@^1.6.0:
   version "1.6.0"
   resolved "https://registry.npm.taobao.org/javascript-stringify/download/javascript-stringify-1.6.0.tgz?cache=0&sync_timestamp=1572948916758&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fjavascript-stringify%2Fdownload%2Fjavascript-stringify-1.6.0.tgz#142d111f3a6e3dae8f4a9afd77d45855b5a9cce3"
 
-js-base64@^2.1.8, js-base64@^2.1.9:
+js-base64@^2.1.8:
   version "2.5.1"
   resolved "https://registry.npm.taobao.org/js-base64/download/js-base64-2.5.1.tgz#1efa39ef2c5f7980bb1784ade4a8af2de3291121"
 
@@ -5586,13 +5579,9 @@ minimist@0.0.8:
   version "0.0.8"
   resolved "https://registry.npm.taobao.org/minimist/download/minimist-0.0.8.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fminimist%2Fdownload%2Fminimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
 
-minimist@^1.1.3, minimist@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.npm.taobao.org/minimist/download/minimist-1.2.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fminimist%2Fdownload%2Fminimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
-
-minimist@~0.0.1:
-  version "0.0.10"
-  resolved "https://registry.npm.taobao.org/minimist/download/minimist-0.0.10.tgz#de3f98543dbf96082be48ad1a0c7cda836301dcf"
+minimist@^1.1.3, minimist@^1.2.0, minimist@^1.2.5:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
 
 mississippi@^2.0.0:
   version "2.0.0"
@@ -5720,8 +5709,8 @@ negotiator@0.6.2:
   resolved "https://registry.npm.taobao.org/negotiator/download/negotiator-0.6.2.tgz#feacf7ccf525a77ae9634436a64883ffeca346fb"
 
 neo-async@^2.5.0, neo-async@^2.6.0, neo-async@^2.6.1:
-  version "2.6.1"
-  resolved "https://registry.npm.taobao.org/neo-async/download/neo-async-2.6.1.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fneo-async%2Fdownload%2Fneo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
 
 nice-try@^1.0.4:
   version "1.0.5"
@@ -6023,13 +6012,6 @@ opn@^5.5.0:
   resolved "https://registry.npm.taobao.org/opn/download/opn-5.5.0.tgz#fc7164fab56d235904c51c3b27da6758ca3b9bfc"
   dependencies:
     is-wsl "^1.1.0"
-
-optimist@^0.6.1:
-  version "0.6.1"
-  resolved "https://registry.npm.taobao.org/optimist/download/optimist-0.6.1.tgz#da3ea74686fa21a19a111c326e90eb15a0196686"
-  dependencies:
-    minimist "~0.0.1"
-    wordwrap "~0.0.2"
 
 optionator@^0.8.2, optionator@^0.8.3:
   version "0.8.3"
@@ -6631,13 +6613,6 @@ postcss-px-to-viewport@^1.1.1:
     object-assign ">=4.0.1"
     postcss ">=5.0.2"
 
-postcss-pxtorem@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.npm.taobao.org/postcss-pxtorem/download/postcss-pxtorem-4.0.1.tgz#9c64d0efe4885473cc1cb0305c6ffc3ebb45b1cd"
-  dependencies:
-    object-assign "^4.1.0"
-    postcss "^5.2.10"
-
 postcss-reduce-initial@^4.0.3:
   version "4.0.3"
   resolved "https://registry.npm.taobao.org/postcss-reduce-initial/download/postcss-reduce-initial-4.0.3.tgz#7fd42ebea5e9c814609639e2c2e84ae270ba48df"
@@ -6712,15 +6687,6 @@ postcss@>=5.0.2:
     chalk "^2.4.2"
     source-map "^0.6.1"
     supports-color "^6.1.0"
-
-postcss@^5.2.10:
-  version "5.2.18"
-  resolved "https://registry.npm.taobao.org/postcss/download/postcss-5.2.18.tgz?cache=0&sync_timestamp=1577751206655&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fpostcss%2Fdownload%2Fpostcss-5.2.18.tgz#badfa1497d46244f6390f58b319830d9107853c5"
-  dependencies:
-    chalk "^1.1.3"
-    js-base64 "^2.1.9"
-    source-map "^0.5.6"
-    supports-color "^3.2.3"
 
 postcss@^6.0.1, postcss@^6.0.23:
   version "6.0.23"
@@ -7660,7 +7626,7 @@ source-map@^0.5.0, source-map@^0.5.6:
 
 source-map@^0.6.0, source-map@^0.6.1, source-map@~0.6.0, source-map@~0.6.1:
   version "0.6.1"
-  resolved "https://registry.npm.taobao.org/source-map/download/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
+  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
 
 source-map@^0.7.3:
   version "0.7.3"
@@ -7998,12 +7964,6 @@ supports-color@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npm.taobao.org/supports-color/download/supports-color-2.0.0.tgz?cache=0&sync_timestamp=1569557271992&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsupports-color%2Fdownload%2Fsupports-color-2.0.0.tgz#535d045ce6b6363fa40117084629995e9df324c7"
 
-supports-color@^3.2.3:
-  version "3.2.3"
-  resolved "https://registry.npm.taobao.org/supports-color/download/supports-color-3.2.3.tgz#65ac0504b3954171d8a64946b2ae3cbb8a5f54f6"
-  dependencies:
-    has-flag "^1.0.0"
-
 supports-color@^5.3.0, supports-color@^5.4.0:
   version "5.5.0"
   resolved "https://registry.npm.taobao.org/supports-color/download/supports-color-5.5.0.tgz?cache=0&sync_timestamp=1569557271992&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsupports-color%2Fdownload%2Fsupports-color-5.5.0.tgz#e2e69a44ac8772f78a1ec0b35b689df6530efc8f"
@@ -8305,11 +8265,8 @@ uglify-js@3.4.x:
     source-map "~0.6.1"
 
 uglify-js@^3.1.4:
-  version "3.7.7"
-  resolved "https://registry.npm.taobao.org/uglify-js/download/uglify-js-3.7.7.tgz#21e52c7dccda80a53bf7cde69628a7e511aec9c9"
-  dependencies:
-    commander "~2.20.3"
-    source-map "~0.6.1"
+  version "3.13.5"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.13.5.tgz#5d71d6dbba64cf441f32929b1efce7365bb4f113"
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
@@ -8808,9 +8765,9 @@ word-wrap@~1.2.3:
   version "1.2.3"
   resolved "https://registry.npm.taobao.org/word-wrap/download/word-wrap-1.2.3.tgz#610636f6b1f703891bd34771ccb17fb93b47079c"
 
-wordwrap@~0.0.2:
-  version "0.0.3"
-  resolved "https://registry.npm.taobao.org/wordwrap/download/wordwrap-0.0.3.tgz#a3d5da6cd5c0bc0008d37234bbaf1bed63059107"
+wordwrap@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-1.0.0.tgz#27584810891456a4171c8d0226441ade90cbcaeb"
 
 worker-farm@^1.7.0:
   version "1.7.0"
