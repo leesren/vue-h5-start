@@ -15,7 +15,7 @@
     "css-comm-utils": "^1.0.6",
     "dayjs": "^1.8.20",
     "js-cookie": "^2.2.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "nprogress": "^0.2.0",
     "vant": "^2.4.7",
     "vant-extends": "^0.0.1",
